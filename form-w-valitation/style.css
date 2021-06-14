@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-image: url(intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  background-color: hsla(0, 100%, 74%, 0.933);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.left-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 0 30px;
+}
+
+.right-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+h1 {
+  font-size: 290%;
+  color: #fff;
+}
+
+#intro {
+  line-height: 1.9em;
+  color: #fff;
+  width: 100%;
+}
+
+#trial {
+  background-color: hsl(248, 32%, 49%);
+  margin: 20px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.385);
+}
+
+#trial p {
+  text-align: center;
+  color: #fff;
+}
+
+.form {
+  background-color: #fff;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.385);
+  margin: 0 20px;
+  padding: 26px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form-control {
+  padding: 10px;
+  position: relative;
+}
+
+.form-control input {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  display: block; /* so they are in their own line*/
+  height: 3.1em;
+  /* padding: 10px; */
+  font-size: 14px;
+  outline-style: none;
+  margin: 10px 0;
+}
+
+input:focus {
+  outline: 0;
+  border: 3px solid hsl(246, 25%, 77%);
+}
+
+.form-control small {
+  position: absolute;
+  bottom: -10px;
+  right: 12px;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  visibility: hidden;
+}
+
+.form-control.success input {
+  border-color: hsl(154, 59%, 51%);
+}
+
+/*If the form control div has an error class attached to it, the input will have a border of color red which we put in a very custom property.*/
+.form-control.error input {
+  border-color: hsla(0, 100%, 74%, 0.933);
+  background-image: url(intro-component-with-signup-form-master/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: hsla(0, 100%, 74%, 0.933);
+  font-size: 0.8em;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  width: 100%;
+  align-items: center;
+  height: 2.9em;
+  font-size: 0.8em;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  padding: 10px;
+  /* margin: 10px; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.99);
+  background-color: hsl(154, 59%, 46%);
+}
+
+#form-footer {
+  font-size: 0.7em;
+  margin: 10px 10px;
+}
+
+#form-footer a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#form-footer a:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-image: url(intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-cont,
+  .right-cont {
+    width: 100%;
+    margin: 0 50px;
+  }
+
+  h1,
+  #intro {
+    align-items: center;
+    padding: 0 30px;
+    width: 93%;
+  }
+
+  #trial {
+    width: 90%;
+    height: 110px;
+  }
+  #trial p {
+    margin: 30px 30px;
+    text-align: center;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
