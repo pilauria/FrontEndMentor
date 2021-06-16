@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 105%;
 }
 
 body,
@@ -103,7 +103,7 @@ html {
   margin-top: 0.2rem;
   margin-left: -2rem;
   background: hsl(0, 0%, 100%);
-  padding: 1.5rem;
+  padding: 0.9rem 0.6rem;
   text-align: left;
   border-radius: 5px;
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
@@ -112,6 +112,7 @@ html {
 .nav-bar-tot li .menu ul li {
   display: block;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .nav-bar-tot site-nav li .menu ul li:last-child {
@@ -176,14 +177,14 @@ html {
 }
 
 .header-main h1 {
-  font-size: 3.5rem;
+  font-size: 4.7rem;
   color: hsl(0, 0%, 100%);
   margin-bottom: 1rem;
   font-family: 'Overpass', sans-serif;
 }
 
 .header-main p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: hsl(0, 0%, 100%);
   margin-bottom: 3rem;
   font-family: 'Ubuntu', sans-serif;
@@ -215,6 +216,8 @@ html {
   color: hsl(353, 100%, 62%);
   border-radius: 2rem;
   transition: 0.5s;
+  font-size: 1.3rem;
+  padding: 20px;
 }
 
 .header-main-links li .start:hover {
@@ -228,6 +231,8 @@ html {
   border-radius: 2rem;
   transition: 0.5s;
   border: 1px solid hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+  padding: 20px;
 }
 
 .header-main-links li .learn:hover {
@@ -252,10 +257,10 @@ html {
 }
 
 .description h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: hsl(208, 49%, 24%);
   text-align: center;
-  margin-bottom: -4rem;
+  margin-bottom: 1rem;
   font-family: 'Overpass', sans-serif;
   font-weight: 700;
 }
@@ -272,7 +277,7 @@ html {
 }
 
 .description .description-content .description-content-leftcolumn h3 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   color: hsl(208, 49%, 24%);
   margin-bottom: 2.5rem;
   font-family: 'Overpass', sans-serif;
@@ -280,10 +285,11 @@ html {
 }
 
 .description .description-content .description-content-leftcolumn p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 3rem;
   font-family: 'Overpass', sans-serif;
   font-weight: 300;
+  line-height: 2.1rem;
 }
 
 .description .description-content .description-content-rightcolumn {
@@ -325,7 +331,7 @@ html {
 }
 
 .services .services-rightcolumn h4 {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   color: hsl(0, 0%, 100%);
   margin-bottom: 2rem;
   font-family: 'Overpass', sans-serif;
@@ -333,11 +339,11 @@ html {
 }
 
 .services .services-rightcolumn p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: hsl(0, 0%, 100%);
   font-family: 'Overpass', sans-serif;
   font-weight: 300;
-  line-height: 1.9rem;
+  line-height: 2.3rem;
 }
 
 .services .services-leftcolumn {
@@ -361,6 +367,8 @@ html {
   top: -50rem;
   z-index: 1;
   width: 250%;
+  z-index: 1;
+  opacity: 0.3;
 }
 
 /** Features starts here **/
@@ -399,7 +407,7 @@ html {
 }
 
 .features .features-rightcolumn h5 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: hsl(208, 49%, 24%);
   margin-bottom: 1.5rem;
   font-family: 'Overpass', sans-serif;
@@ -407,7 +415,7 @@ html {
 }
 
 .features .features-rightcolumn p {
-  font-size: 0.95rem;
+  font-size: 1.35rem;
   color: hsl(208, 49%, 24%);
   margin-bottom: 3rem;
   font-family: 'Overpass', sans-serif;
